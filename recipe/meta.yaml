@@ -21,8 +21,7 @@ requirements:
 
 test:
   commands:
-    - test -f "${PREFIX}/lib64/libpugixml.a"  # [linux]
-    - test -f "${PREFIX}/lib/libpugixml.a"  # [osx]
+    - test -f "${PREFIX}/lib/libpugixml.a"  # [unix]
     - test -f "${PREFIX}/include/pugixml.hpp"  # [unix]
     - if not exist %LIBRARY_LIB%\\pugixml.lib exit 1  # [win]
     - if not exist %LIBRARY_INC%\\pugiconfig.hpp exit 1  # [win]
@@ -46,3 +45,4 @@ about:
 extra:
   recipe-maintainers:
     - scopatz
+    - SylvainCorlay
