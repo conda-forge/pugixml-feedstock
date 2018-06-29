@@ -20,14 +20,16 @@ Unicode interface variants and conversions between different Unicode encodings
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pugixml-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pugixml-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pugixml-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pugixml-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pugixml-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pugixml-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/pugixml-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/pugixml-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/pugixml-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/pugixml-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/pugixml-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/pugixml-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pugixml/badges/version.svg)](https://anaconda.org/conda-forge/pugixml)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pugixml/badges/downloads.svg)](https://anaconda.org/conda-forge/pugixml)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pugixml-green.svg)](https://anaconda.org/conda-forge/pugixml) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pugixml.svg)](https://anaconda.org/conda-forge/pugixml) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pugixml.svg)](https://anaconda.org/conda-forge/pugixml) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pugixml.svg)](https://anaconda.org/conda-forge/pugixml) |
 
 Installing pugixml
 ==================
