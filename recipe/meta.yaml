@@ -16,8 +16,11 @@ build:
 
 requirements:
   build:
-    - toolchain
     - cmake
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
+    - cmake  # [win]
 
 test:
   commands:
