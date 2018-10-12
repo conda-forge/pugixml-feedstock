@@ -15,6 +15,7 @@ build:
   number: 1000
 
 requirements:
+  host: []
   build:
     - cmake
     - {{ compiler('c') }}
