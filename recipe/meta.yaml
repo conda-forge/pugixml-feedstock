@@ -1,6 +1,6 @@
 {% set name = "pugixml" %}
-{% set version = "1.9" %}
-{% set sha256 = "7ac060048bf00da4b3902cf411f0ba9f048cdc5580eed1f5a27ff51be4a38243" %}
+{% set version = "1.10" %}
+{% set sha256 = "10f1f0a32b559ca8435d95855928d990cfbb9796e339efb638080c897728174c" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 0
 
 requirements:
   host: []
