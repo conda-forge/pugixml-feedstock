@@ -15,7 +15,6 @@ build:
   number: 0
 
 requirements:
-  host: []
   build:
     - cmake
     - {{ compiler('c') }}
