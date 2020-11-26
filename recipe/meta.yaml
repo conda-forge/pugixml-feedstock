@@ -1,6 +1,6 @@
 {% set name = "pugixml" %}
-{% set version = "1.10" %}
-{% set sha256 = "10f1f0a32b559ca8435d95855928d990cfbb9796e339efb638080c897728174c" %}
+{% set version = "1.11" %}
+{% set sha256 = "79b5e3a50dca0c150ab5fd282e23dd1da00760073a7040ca8dde4e031330add2" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   run_exports:
     - {{ pin_subpackage('pugixml', max_pin='x.x') }}
 
@@ -35,7 +35,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: README.md
-  summary: 'Light-weight, simple and fast XML parser for C++ with XPath support'
+  summary: Light-weight, simple and fast XML parser for C++ with XPath support
   description: |
     pugixml is a C++ XML processing library, which consists of a DOM-like interface
     with rich traversal/modification capabilities, an extremely fast XML parser which
