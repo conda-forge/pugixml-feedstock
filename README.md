@@ -5,9 +5,13 @@ Home: http://pugixml.org/
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pugixml-feedstock/blob/master/LICENSE.txt)
 
 Summary: Light-weight, simple and fast XML parser for C++ with XPath support
+
+Development: https://github.com/zeux/pugixml
+
+Documentation: http://pugixml.org/
 
 pugixml is a C++ XML processing library, which consists of a DOM-like interface
 with rich traversal/modification capabilities, an extremely fast XML parser which
