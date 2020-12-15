@@ -1,6 +1,6 @@
 {% set name = "pugixml" %}
-{% set version = "1.11.1" %}
-{% set sha256 = "ddceca478e7a7997df70c9249d71b7c2179c0123bae9f2c19d729c6dccd1348e" %}
+{% set version = "1.11.2" %}
+{% set sha256 = "a33d4e9fa0c26fb0756cf2e18e044ab747d7ea1693aa0ccb7e9d754746cca7e3" %}
 
 package:
   name: {{ name|lower }}
