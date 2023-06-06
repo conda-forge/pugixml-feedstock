@@ -25,7 +25,7 @@ requirements:
 
 test:
   commands:
-    - test -f "${PREFIX}/lib/libpugixml.a"  # [unix]
+    - test ! -f "${PREFIX}/lib/libpugixml.a"  # [unix]
     - test -f "${PREFIX}/include/pugixml.hpp"  # [unix]
     - test -f "${PREFIX}/lib/libpugixml${SHLIB_EXT}"  # [unix]
     - if not exist %LIBRARY_LIB%\pugixml.lib exit 1  # [win]
