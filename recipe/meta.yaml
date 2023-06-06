@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage('pugixml', max_pin='x.x') }}
 
@@ -25,10 +25,12 @@ requirements:
 
 test:
   commands:
-    - test -f "${PREFIX}/lib/libpugixml.a"  # [unix]
+    - test ! -f "${PREFIX}/lib/libpugixml.a"  # [unix]
     - test -f "${PREFIX}/include/pugixml.hpp"  # [unix]
-    - if not exist %LIBRARY_LIB%\\pugixml.lib exit 1  # [win]
-    - if not exist %LIBRARY_INC%\\pugiconfig.hpp exit 1  # [win]
+    - test -f "${PREFIX}/lib/libpugixml${SHLIB_EXT}"  # [unix]
+    - if not exist %LIBRARY_LIB%\pugixml.lib exit 1  # [win]
+    - if not exist %LIBRARY_INC%\pugiconfig.hpp exit 1  # [win]
+    - if not exist %LIBRARY_BIN%\pugixml%SHLIB_EXT% exit 1  # [win]
 
 about:
   home: http://pugixml.org/
@@ -50,3 +52,4 @@ extra:
   recipe-maintainers:
     - scopatz
     - SylvainCorlay
+    - ilya-lavrenov
