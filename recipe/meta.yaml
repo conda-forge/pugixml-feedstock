@@ -1,6 +1,6 @@
 {% set name = "pugixml" %}
-{% set version = "1.13" %}
-{% set sha256 = "5c5ad5d7caeb791420408042a7d88c2c6180781bf218feca259fd9d840a888e1" %}
+{% set version = "1.14" %}
+{% set sha256 = "610f98375424b5614754a6f34a491adbddaaec074e9044577d965160ec103d2e" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   run_exports:
     - {{ pin_subpackage('pugixml', max_pin='x.x') }}
 
