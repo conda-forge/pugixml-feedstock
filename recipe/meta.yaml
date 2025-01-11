@@ -1,6 +1,6 @@
 {% set name = "pugixml" %}
-{% set version = "1.14" %}
-{% set sha256 = "610f98375424b5614754a6f34a491adbddaaec074e9044577d965160ec103d2e" %}
+{% set version = "1.15" %}
+{% set sha256 = "b39647064d9e28297a34278bfb897092bf33b7c487906ddfc094c9e8868bddcb" %}
 
 package:
   name: {{ name|lower }}
@@ -21,6 +21,7 @@ requirements:
     - cmake
     - make
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
 
 test:
