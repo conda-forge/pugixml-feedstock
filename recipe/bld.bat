@@ -5,7 +5,7 @@ mkdir build
 cd build
 
 :: Configure using the CMakeFiles
-cmake -G "NMake Makefiles" ^
+cmake %CMAKE_ARGS% -G "NMake Makefiles" ^
 	-DCMAKE_INSTALL_PREFIX:PATH="%LIBRARY_PREFIX%" ^
 	-DBUILD_SHARED_LIBS:BOOL=ON ^
 	-DCMAKE_BUILD_TYPE:STRING=Release ..
